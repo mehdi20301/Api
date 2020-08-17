@@ -112,8 +112,8 @@ namespace WebApiProject.Controllers
         /// </summary>
         private static Task<ClaimsIdentity> GetClaimsIdentity(Users user)
         {
-            if (user.UserName == "saransh" &&
-                user.Password == "karoliwal")
+            if (user.UserName == "test" &&
+                user.Password == "test")
             {
                 return Task.FromResult(new ClaimsIdentity(
                   new GenericIdentity(user.UserName, "Token"),
@@ -122,8 +122,8 @@ namespace WebApiProject.Controllers
                   }));
             }
 
-            if (user.UserName == "NotMickeyMouse" &&
-                user.Password == "MickeyMouseIsBoss123")
+            if (user.UserName == "mehdi" &&
+                user.Password == "123")
             {
                 return Task.FromResult(new ClaimsIdentity(
                   new GenericIdentity(user.UserName, "Token"),
